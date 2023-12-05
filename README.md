@@ -6,7 +6,7 @@ This repository contains my Python solutions to the [Advent of Code](https://adv
 ## Installation and Setup
 To run a specific solution, navigate to the year and day folder and execute the Python script. 
 
-For example, to run the solution for Day 2 of year 2023:
+For example, to run the solution for day 2 of year 2023:
 ```bash
 cd 2023/2
 python 2.py
