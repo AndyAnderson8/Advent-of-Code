@@ -1,0 +1,45 @@
+# PyCharm specific files
+.idea/
+
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Python development environments
+Pipfile.lock
+Pipfile
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Pytest, coverage reports
+*.cover
+.coverage
+.tox/
+.nox/
+*.log
+nosetests.xml
+coverage.xml
+*.hypothesis/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# mypy
+.mypy_cache/
+
+# IDE specific files
+*.iml
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

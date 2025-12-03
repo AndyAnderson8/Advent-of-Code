@@ -14,10 +14,10 @@ def solution(battery_qty: int, input_file: Path = Path("input.txt")) -> int:
             # Chop off N end elements so they're still available for successive iterations
             # Also, apparently [:-0] resolves to [:0], so the new list would always be empty, hence the "or None"... Very dumb!
             elig_batts = batt_bank[:-(curr_magnitude - 1) or None]
-            max_batt = max(set(map(int, elig_batts)))
+            max_batt = max(map(int, elig_batts))
 
             # Move the list up to last idx found
-            batt_bank = batt_bank[batt_bank.index(str(max_batt)) + 1 :]
+            batt_bank = batt_bank[batt_bank.index(str(max_batt)) + 1:]
 
             max_bank_jolts *= 10  # Shift total val over, open a new ones-place for new value
             max_bank_jolts += max_batt
