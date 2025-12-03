@@ -2,6 +2,7 @@ from pathlib import Path
 
 from utils import parse_input_to_lines
 
+
 def solution_1(input_file: Path = Path("input.txt")) -> int:
     lines = parse_input_to_lines(input_file, ",")
     invalid_sum = 0
@@ -50,7 +51,3 @@ def solution_2(input_file: Path = Path("input.txt")) -> int:
 if __name__ == "__main__":
     print(f"Solution 1: {solution_1()}")
     print(f"Solution 2: {solution_2()}")
-
-
-
-
