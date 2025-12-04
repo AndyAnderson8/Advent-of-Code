@@ -20,28 +20,28 @@ def solution(multi_pass: bool, input_file: Path = Path("input.txt"), blocking_qt
 
                 count = 0
 
-                if x != 0 and y != 0 and input_data[y-1][x-1] == "@":
+                if x != 0 and y != 0 and input_data[y - 1][x - 1] == "@":
                     count += 1
 
-                if y != 0 and input_data[y-1][x] == "@":
+                if y != 0 and input_data[y - 1][x] == "@":
                     count += 1
 
-                if x != length - 1 and y != 0 and input_data[y-1][x+1] == "@":
+                if x != length - 1 and y != 0 and input_data[y - 1][x + 1] == "@":
                     count += 1
 
-                if x != 0 and input_data[y][x-1] == "@":
+                if x != 0 and input_data[y][x - 1] == "@":
                     count += 1
 
-                if x != length - 1 and input_data[y][x+1] == "@":
+                if x != length - 1 and input_data[y][x + 1] == "@":
                     count += 1
 
-                if x != 0 and y != height - 1 and input_data[y+1][x-1] == "@":
+                if x != 0 and y != height - 1 and input_data[y + 1][x - 1] == "@":
                     count += 1
 
-                if y != height - 1 and input_data[y+1][x] == "@":
+                if y != height - 1 and input_data[y + 1][x] == "@":
                     count += 1
 
-                if x != length - 1 and y != height - 1 and input_data[y+1][x+1] == "@":
+                if x != length - 1 and y != height - 1 and input_data[y + 1][x + 1] == "@":
                     count += 1
 
                 if count < blocking_qty:
@@ -56,6 +56,7 @@ def solution(multi_pass: bool, input_file: Path = Path("input.txt"), blocking_qt
             break
 
     return total_accessible
+
 
 if __name__ == "__main__":
     print(f"Solution 1: {solution(False)}")
