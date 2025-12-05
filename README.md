@@ -1,16 +1,9 @@
 # Advent of Code Solutions
 
 ## Description
-This repository contains my Python solutions to the [Advent of Code](https://adventofcode.com/) coding challenges. Each year's solutions are organized such that there is a separate directory for each day (numbered 1-31). For each day, you will find both a Python script and an input file.
+This repository contains my Python solutions to the [Advent of Code](https://adventofcode.com/) coding challenges. For each day, you will find both a Python script and an input file. Each year has verying levels of completion before the holidays got busy and had to put it to the side. One year I'll finish them all!
 
-## Installation and Setup
-To run a specific solution, navigate to the year and day folder and execute the Python script. 
-
-For example, to run the solution for day 2 of year 2023:
-```bash
-cd 2023/2
-python 2.py
-```
+Fair warning, I started participating in these challenges while still in school, so please excuse the questionable code quality on older years... 
 
 ## License
 [MIT](https://github.com/AndyAnderson8/Advent-of-Code/blob/main/LICENSE.txt)
