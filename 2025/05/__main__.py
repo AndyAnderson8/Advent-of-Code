@@ -43,8 +43,8 @@ def get_inputs(input_file: Path = Path("input.txt")) -> tuple[list[set[int]], li
 
     for line in input_lines:
         if "-" in line:
-            low, high = line.split("-")
-            ranges.append((int(low), int(high)))
+            low, high = map(int, line.split("-"))
+            ranges.append((low, high))
         elif line != "":
             test_vals.append(int(line))
 
