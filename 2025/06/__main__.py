@@ -5,13 +5,8 @@ from utils import parse_input_to_lines
 
 
 def solution_1(input_file: Path = Path("input.txt")) -> int:
-    rows = parse_input_to_lines(input_file)
+    rows = [line.split() for line in parse_input_to_lines(input_file)]
     result_sum = 0
-
-    for col_idx, line in enumerate(rows):
-        while "  " in line:
-            line = line.replace("  ", " ")
-        rows[col_idx] = line.split(" ")
 
     for col_idx in range(len(rows[0])):
         vals = [int(rows[row_idx][col_idx]) for row_idx in range(len(rows) - 1)]
